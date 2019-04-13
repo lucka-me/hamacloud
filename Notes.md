@@ -127,7 +127,7 @@
     $ bin/hdfs dfs -mkdir -p /work/wordcount/output
     ```
 2. 准备输入文件：
-    从古腾堡计划下载《爱丽丝漫游仙境》的纯文本文档，清除头尾说明、数字和标点符号，并通过SCP传入服务器：
+    从古腾堡计划下载《爱丽丝漫游仙境》的纯文本文档，清除头尾说明、数字和标点符号，并通过SCP传入服务器：
     ```bash
     $ scp 11-0.txt user@hostname:~/Downloads
     ```

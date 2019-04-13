@@ -1,7 +1,10 @@
 # Hamacloud
-> Hamac made of clouds
+> *How romantic it could be*
+> *to climb the sky*
+> *in a hamac made of clouds*
 
-A project for learning Hadoop.
+Well, just a project for learning Hadoop.
 
 ## Contents
 - [Notes](./Notes.md)
+- [Word count exapmle](./mapreduce-counter-kotlin/) written in Kotlin with IntelliJ IDEA
