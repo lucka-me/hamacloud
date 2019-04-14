@@ -6,7 +6,7 @@ import org.apache.hadoop.mapreduce.Mapper
 import org.apache.hadoop.mapreduce.Reducer
 import java.util.*
 
-class CounterCore {
+class CountCore {
 
     class CoreMapper: Mapper<Any, Text, Text, IntWritable>() {
 
@@ -32,5 +32,6 @@ class CounterCore {
         override fun reduce(key: Text?, values: MutableIterable<IntWritable>?, context: Context?) {
             context?.write(key, IntWritable(values?.sumBy { it.get() } ?: return))
         }
+
     }
 }

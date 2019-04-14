@@ -26,3 +26,6 @@ hs_err_pid*
 ### IntelliJ
 # Output folder
 out
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/dictionaries
