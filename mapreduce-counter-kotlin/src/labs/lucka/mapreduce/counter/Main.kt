@@ -31,7 +31,6 @@ fun main(args: Array<String>) {
     jobCount.reducerClass = CountCore.CoreReducer::class.java
     jobCount.outputKeyClass = Text::class.java
     jobCount.outputValueClass = IntWritable::class.java
-
     FileInputFormat.addInputPath(jobCount, inputPath)
     FileOutputFormat.setOutputPath(jobCount, intermediatePath)
     if (!jobCount.waitForCompletion(true)) System.exit(1)
@@ -43,6 +42,7 @@ fun main(args: Array<String>) {
     // Sort Job
     val jobSort = Job.getInstance(conf, "Counter: Sort")
     jobSort.setJarByClass(SortCore::class.java)
+    jobSort.inputFormatClass = SortCore.CoreInputFormat::class.java
     jobSort.mapperClass = SortCore.CoreMapper::class.java
     jobSort.setSortComparatorClass(SortCore.CoreComparator::class.java)
     jobSort.reducerClass = SortCore.CoreReducer::class.java
