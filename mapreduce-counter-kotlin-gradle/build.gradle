@@ -1,0 +1,33 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.30'
+}
+
+group 'labs.lucka.mapreduce'
+version '0.1'
+
+repositories {
+    mavenCentral()
+}
+
+// Use this if your os returns the correct path
+final String HADOOP_HOME = System.getenv("HADOOP_HOME")
+// Use this if not
+//final String HADOOP_HOME = "PATH_OF_HADOOP_HOME"
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation files("${HADOOP_HOME}/share/hadoop/common/hadoop-common-3.2.0.jar")
+    implementation files("${HADOOP_HOME}/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.0.jar")
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "labs.lucka.mapreduce.counter.MainKt"
+    }
+    from(zipTree("PATH_TO_/kotlin-stdlib-1.3.11.jar"))
+    from(zipTree("PATH_TO_/kotlin-stdlib-jdk8-1.3.11.jar"))
+}
