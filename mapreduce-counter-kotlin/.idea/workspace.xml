@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2d5dd571-ed15-47af-9d9e-70aaa8dfabf4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/labs/lucka/mapreduce/counter/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/labs/lucka/mapreduce/counter/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/labs/lucka/mapreduce/counter/SortCore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/labs/lucka/mapreduce/counter/SortCore.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labs/lucka/mapreduce/counter/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="270">
+              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding>
                 <element signature="e#38#389#0" expanded="true" />
               </folding>
@@ -33,20 +32,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/labs/lucka/mapreduce/counter/SortCore.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" column="44" lean-forward="true" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+            <state relative-caret-position="468">
+              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
               <folding>
                 <element signature="e#38#261#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$HADOOP_HOME$/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.0.jar!/org/apache/hadoop/mapreduce/lib/input/KeyValueTextInputFormat.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -104,17 +94,6 @@
             <path>
               <item name="mapreduce-counter-kotlin" type="b2602c69:ProjectViewProjectNode" />
               <item name="mapreduce-counter-kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mapreduce-counter-kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mapreduce-counter-kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mapreduce-counter-kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mapreduce-counter-kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="dictionaries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mapreduce-counter-kotlin" type="b2602c69:ProjectViewProjectNode" />
@@ -224,16 +203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/labs/lucka/mapreduce/counter/CountCore.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="e#38#214#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$HADOOP_HOME$/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.0.jar!/org/apache/hadoop/mapreduce/InputFormat.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -248,23 +217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$HADOOP_HOME$/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.0.jar!/org/apache/hadoop/mapreduce/lib/input/KeyValueTextInputFormat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/labs/lucka/mapreduce/counter/Main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding>
-            <element signature="e#38#389#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$HADOOP_HOME$/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.0.jar!/org/apache/hadoop/mapreduce/RecordReader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -272,10 +224,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$HADOOP_HOME$/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.0.jar!/org/apache/hadoop/mapreduce/lib/input/KeyValueTextInputFormat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labs/lucka/mapreduce/counter/CountCore.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding>
+            <element signature="e#38#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labs/lucka/mapreduce/counter/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="e#38#389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/labs/lucka/mapreduce/counter/SortCore.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="44" lean-forward="true" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+        <state relative-caret-position="468">
+          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
           <folding>
             <element signature="e#38#261#0" expanded="true" />
           </folding>

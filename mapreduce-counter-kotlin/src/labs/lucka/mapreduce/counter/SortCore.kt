@@ -73,17 +73,12 @@ class SortCore {
 
     class CoreComparator: IntWritable.Comparator() {
 
-        override fun compare(b1: ByteArray?, s1: Int, l1: Int, b2: ByteArray?, s2: Int, l2: Int): Int {
-            return -1 * super.compare(b1, s1, l1, b2, s2, l2)
-        }
+        override fun compare(b1: ByteArray?, s1: Int, l1: Int, b2: ByteArray?, s2: Int, l2: Int): Int =
+            -1 * super.compare(b1, s1, l1, b2, s2, l2)
 
-        override fun compare(a: Any?, b: Any?): Int {
-            return -1 * super.compare(a, b)
-        }
+        override fun compare(a: Any?, b: Any?): Int = -1 * super.compare(a, b)
 
-        override fun compare(a: WritableComparable<*>?, b: WritableComparable<*>?): Int {
-            return -1 * super.compare(a, b)
-        }
+        override fun compare(a: WritableComparable<*>?, b: WritableComparable<*>?): Int = -1 * super.compare(a, b)
 
     }
 
