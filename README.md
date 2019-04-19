@@ -6,8 +6,10 @@
 Well, just a project for learning Hadoop.
 
 ## Contents
-- [notes.md](./notes.md)  
+- [notes-hadoop.md](./notes-hadoop.md)  
   some notes about Hadoop setup
+- [notes-mongodb.md](./notes-mongodb.md)  
+  some notes about mongoDB setup
 - [mapreduce-counter-kotlin](./mapreduce-counter-kotlin/)  
   A word count exapmle written in Kotlin with IntelliJ IDEA
 - [mapreduce-counter-kotlin-gradle](./mapreduce-counter-kotlin-gradle/)  

@@ -1,29 +1,29 @@
-# 笔记
+# 笔记 - Hadoop
 ## Hadoop 安装
 1. 安装 Java
-   安装文件并自动配置
-   ```bash
-   $ sudo add-apt-repository ppa:webupd8team/java
-   $ sudo apt-get update
-   $ sudo apt-get install oracle-java8-installer
-   $ sudo apt-get install oracle-java8-set-default   
-   ```
+    安装文件并自动配置
+    ```bash
+    $ sudo add-apt-repository ppa:webupd8team/java
+    $ sudo apt-get update
+    $ sudo apt-get install oracle-java8-installer
+    $ sudo apt-get install oracle-java8-set-default   
+    ```
 2. 安装 Hadoop  
-   为 Hadoop 创建文件夹并将权限赋予相关账户：  
-   ```bash
-   $ sudo mkdir /opt/software/hadoop
-   $ sudo chown -R <user>:<group> /opt/software/hadoop
-   ```
-   添加环境变量：在`~/.profile`加入以下内容：
-   ```bash
-   export HADOOP_HOME="/opt/software/hadoop"
-   ```
-   将 Hadoop 文件解压缩至`$HADOOP_HOME`
+    为 Hadoop 创建文件夹并将权限赋予相关账户：  
+    ```bash
+    $ sudo mkdir /opt/software/hadoop
+    $ sudo chown -R <user>:<group> /opt/software/hadoop
+    ```
+    添加环境变量：在`~/.profile`加入以下内容：
+    ```bash
+    export HADOOP_HOME="/opt/software/hadoop"
+    ```
+    将 Hadoop 文件解压缩至`$HADOOP_HOME`
 ## 配置 Hadoop
 1. 添加环境变量：在`etc/hadoop/hadoop-env.sh`中修改以下内容：
-   ```bash
-   export JAVA_HOME=/usr
-   ```
+    ```bash
+    export JAVA_HOME=/usr
+    ```
 ### 配置伪分布式：
 1. 修改`etc/hadoop/core-site.xml`：
     ```xml
