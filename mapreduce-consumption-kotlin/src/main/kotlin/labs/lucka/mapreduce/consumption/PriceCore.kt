@@ -12,7 +12,9 @@ class PriceCore {
 
         override fun map(key: Any?, value: BSONObject?, context: Context?) {
             if (value == null) return
-            context?.write(Text(value.get("zip") as String), DoubleWritable(value.get("avg_price") as Double))
+            val price = (value.get("price") as String).toDoubleOrNull() ?: return
+            val area = (value.get("province") as String) + (value.get("city") as String) + (value.get("area") as String)
+            context?.write(Text(area), DoubleWritable(price))
         }
 
     }

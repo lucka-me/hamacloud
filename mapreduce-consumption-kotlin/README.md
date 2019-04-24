@@ -9,11 +9,13 @@ This implement will:
 1. Obtains data from mongoDB, with format like:  
     ```json
     {
-        "zip": "000000",
-        "avg_price": 20.0
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "price": "20.0"
     }
     ```
-2. Calculates average of `avg_price` in every area (based on `zip`)
+2. Calculates average of `price` in every area (based on `province + city + area`)
 3. Save the result to mongoDB
 
 ## Requirement
